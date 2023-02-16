@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: docsstonesoupio-ltcb
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jsese-tenant-docsstonesoupio-ltcb
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4f6be9382e5e8c06859b4632cf85b6a80d691abd2056a355786fe1a94d783a19
         name: my-nodejs
         ports:
         - containerPort: 3001
