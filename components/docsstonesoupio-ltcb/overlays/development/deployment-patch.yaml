@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: docsstonesoupio-ltcb
+  namespace: jsese-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4f6be9382e5e8c06859b4632cf85b6a80d691abd2056a355786fe1a94d783a19
+        name: my-nodejs
+        resources: {}
+status: {}
