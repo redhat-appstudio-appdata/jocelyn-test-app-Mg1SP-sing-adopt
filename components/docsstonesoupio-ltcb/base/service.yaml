@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: docsstonesoupio-ltcb
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: docsstonesoupio-ltcb
+    app.kubernetes.io/part-of: jocelyn-test-app
+  name: docsstonesoupio-ltcb
+  namespace: jsese-tenant
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: docsstonesoupio-ltcb
+status:
+  loadBalancer: {}
